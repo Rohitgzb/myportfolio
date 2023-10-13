@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+         .header{
+    background-image: linear-gradient(to right,rgb(20, 32, 44),rgb(89, 181, 221));
+ }
+ .navbar-brand{
+    color: white !important;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+ }
+ .nav-link{
+    color: white !important;
+ }
+ .nav-link:hover{
+    color: lime !important;
+ }
+.name{
+    color: lime;
+    font-size: 32px;
+    font-family: 'Libre Baskerville', serif;
+}
+.animate-charcter
+{
+text-transform: uppercase;
+background-image: linear-gradient(
+-225deg,
+#7c5dec 0%,
+#75ef56 29%,
+#ff1361 67%,
+#fff800 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 2s linear infinite;
+display: inline-block;
+font-size: 30px;
+}
+
+@keyframes textclip {
+to {
+background-position: 200% center;
+}
+}
+.section-title h2::after {
+content: "";
+position: absolute;
+display: block;
+width: 50px;
+height: 3px;
+background: #34b7a7;
+bottom: 0;
+left: calc(50% - 25px);
+}
+.section-title {
+text-align: center;
+padding-bottom: 30px;
+}
+.section-title h2 {
+font-size: 32px;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 20px;
+padding-bottom: 20px;
+position: relative;
+}
+.mt-5 {
+margin-top: 3rem!important;
+}
+div {
+display: block;
+}
+.row>* {
+flex-shrink: 0;
+/* width: 100%; */
+max-width: 100%;
+padding-right: calc(var(--bs-gutter-x) * .5);
+padding-left: calc(var(--bs-gutter-x) * .5);
+margin-top: var(--bs-gutter-y);
+}
+.contact .info {
+width: 100%;
+background: #fff;
+}
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+background: #34b7a7;
+color: #fff;
+}
+.contact .info i {
+font-size: 20px;
+color: #34b7a7;
+float: left;
+width: 44px;
+height: 44px;
+background: #effbf9;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50px;
+transition: all 0.3s ease-in-out};
+.contact .info h4 {
+padding: 0 0 0 60px;
+font-size: 22px;
+font-weight: 600;
+margin-bottom: 5px;
+color: #222222;
+}
+.contact .info p {
+padding: 0 0 0 60px;
+margin-bottom: 0;
+font-size: 14px;
+color: #555555;
+}
+.contact .info .email, .contact .info .phone {
+margin-top: 40px;
+}
+.contact .php-email-form {
+width: 100%;
+background: #fff;
+}
+.row {
+--bs-gutter-x: 1.5rem;
+--bs-gutter-y: 0;
+display: flex;
+flex-wrap: wrap;
+margin-top: calc(-1 * var(--bs-gutter-y));
+margin-right: calc(-.5 * var(--bs-gutter-x));
+margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.contact .php-email-form input, .contact .php-email-form textarea {
+border-radius: 4px;
+box-shadow: none;
+font-size: 14px;
+}
+.bi-geo-alt::before {
+content: "\f3e8";
+}
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+display: inline-block;
+font-family: bootstrap-icons !important;
+font-style: normal;
+font-weight: normal !important;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+vertical-align: -0.125em;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+::before {
+box-sizing: border-box;
+}
+.bi-envelope::before {
+content: "\f32f";
+}
+.bi-phone::before {
+content: "\f4e7";
+}
+.row {justify-content: center;
+--bs-gutter-x: 1.5rem;
+--bs-gutter-y: 0;
+display: flex;
+flex-wrap: wrap;
+margin-top: calc(-1 * var(--bs-gutter-y));
+margin-right: calc(-.5 * var(--bs-gutter-x));
+margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.bi-envelope::before { content: "\f32f"; }
+textarea.form-control {
+min-height: calc(1.5em + 0.75rem + calc(var(--bs-border-width) * 2));
+}
+.main0{
+display: flex;
+/* gap: 100px; */
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.main2{
+min-width: 301px;
+width:50%;
+}
+.main1{  min-width: 301px;
+
+width:50%;
+}
+
+
+section#button-container{
+display: inline-block;
+width: 100%;
+
+.container{
+max-width: 900px;
+margin: 0 auto;
+position: relative;
+display: block;
+float:left;
+width: 100%;
+left: 50%;
+transform: translateX(-50%);
+}
+}
+
+.button{
+margin: 20px;
+float: left;
+position: relative;
+font-family: arial;
+text-transform: uppercase;
+color: #fff;
+cursor: pointer;
+
+
+.label{
+padding: 10px;
+display: inline-block;
+}
+}
+.v18{
+
+&:hover{
+.icon{
+transform: scale(0.9) skew(0deg, 0deg);
+
+&:before, &:after{
+width: 60px;
+transition-delay: 0.4s;
+}
+&:before{
+left: calc(50% - 30px);
+}
+&:after{
+right: calc(50% - 30px);
+}
+
+span {
+&:before, &:after {
+height: 0;
+transition-delay: 0s;
+}
+}
+}
+.icon2{
+transform: skew(-40deg, 0deg) scaleX(1);
+background: #f0202f;
+z-index: -1;
+transition-delay: 0.5s;
+}
+}
+
+.label{
+padding: 10px 22px;
+}
+
+.icon2 {
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: skew(-40deg, 0deg) scaleX(0.2);
+transition: all 0.2s;
+}
+
+.icon{
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: skew(-40deg, 0deg);
+transition: all 0.2s;
+
+&:before, &:after{
+content: '';
+height: 1px;
+width: 30px;
+position: absolute;
+display: block;
+background: #f0202f;
+transition: all 0.2s;
+transition-delay: 0s;
+}
+&:before{
+left: 0;
+top: 0;
+}
+&:after{
+right: 0;
+bottom: 0;
+}
+span{
+
+&:before, &:after{
+content: '';
+background: #f0202f;
+position: absolute;
+display: block;
+width: 2px;
+height: 30px;
+transition: all 0.2s;
+transition-delay: 0.4s;
+}
+&:before{
+left: 0;
+top: 0;
+}
+&:after{
+right: 0;
+bottom: 0;
+}
+}
+}
+}
+.main-button{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+footer {
+background: #e9e8e6;
+padding: 30px 0;
+color: #222222;
+font-size: 14px;
+text-align: center;
+}
+
+
+footer .credits {
+padding-top: 5px;
+font-size: 13px;
+}
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+display: inline-block;
+font-family: bootstrap-icons !important;
+font-style: normal;
+font-weight: normal !important;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+vertical-align: -0.125em;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.back-to-top.active {
+visibility: visible;
+opacity: 1;
+}
+.back-to-top {
+position: fixed;
+visibility: hidden;
+opacity: 0;
+right: 15px;
+bottom: 15px;
+z-index: 996;
+background: #34b7a7;
+width: 40px;
+height: 40px;
+border-radius: 50px;
+transition: all 0.4s;
+}
+.back-to-top i {
+font-size: 24px;
+color: #fff;
+line-height: 0;
+}
+li{
+    font-size: 15px;
+    font-weight: 605;
+  }
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand mx-5 mb-2" href="#"> <h3 class="animate-charcter">ROHIT.</h3></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  mx-5 ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item ">
+                    <a class="nav-link active mx-3 " aria-current="page" href="portfolio.html"><span style="color: #75ef56;font-size: 19px;">H</span>ome</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active  mx-3 " aria-current="page" href="about2.html"><span style="color: #75ef56;font-size: 19px;">A</span>bout</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active  mx-3 " aria-current="page" href="sevices.html"><span style="color: #75ef56;font-size: 19px;">S</span>ervices</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active  mx-3" aria-current="page" href="file:///C:/Users/ROHIT/Downloads/Blue%20Web%20Developer%20Resume.pdf"><span style="color: #75ef56;font-size: 19px;">R</span>esume</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active  mx-3" aria-current="page" href="contact.html"><span style="color: #75ef56;font-size: 19px;">C</span>ontacts Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          </section>
+          <br>
+            <section id="contact" class="contact">
+                <div class="container aos-init aos-animate" data-aos="flip-down">
+          
+                  <div class="section-title" data-aos="zoom-in-up">
+                    <h2>Contact</h2>
+                    <div>
+                        <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
+                      </div>
+                      <main class="main0">
+                      <main class="main1">
+                      <div class="row mt-5">
+
+                        <div class="col-lg-4" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                          <div class="info">
+                            <div class="address">
+                              <i class='bx bx-current-location'></i>
+                              <h4>Location:</h4>
+                              <p>Ghaziabad,Uttar Pradesh</p>
+                            </div>
+              
+                            <div class="email">
+                              <i class='bx bxs-envelope'></i>
+                              <h4>Email:</h4>
+                              <p>Rohitpal7533@.com</p>
+                            </div>
+              
+                            <div class="phone">
+                              <i class='bx bxs-phone-call'></i>
+                              <h4>Call:</h4>
+                              <p>+91 7533021501</p>
+                            </div>
+              
+                          </div>
+              
+                        </div>
+                         </div>
+                         </main>
+                                <main class="main2">    
+                            
+                        <div class="col-lg-12 mt-5 mt-lg-0 submit-form"  data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+              
+                          <form action="" method="post" role="form" class="php-email-form">
+                            <div class="row">
+                              <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required=""><br>
+                              </div>
+            
+                              <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                              </div>
+                            </div>
+                            <div class="form-group mt-3">
+                              <input type="number" class="form-control" name="number" id="number" placeholder="Mobile No" required="">
+                            </div>
+                            <div class="form-group mt-3">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+                            </div>
+                        </div>
+                        </main>
+                        </main>
+                
+              
+                      </div>
+                      </div>
+                            
+          </section >
+          <main class="main-button" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
+          <div  class="button v18">
+          <a href="#"><span class="label" style="color: #222222;">Send Message</span>
+            <span class="icon">
+                <span></span>
+            </span>
+            <span class="icon2">
+            </span></a>
+      </div>
+  </main>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class='bx bxs-chevron-up'></i></a>
+  <footer >
+    <div class="container">
+        <div class="copyright"><p>© Copyright<span style="color: lime;">ROHIT.</span>All Right Reserved</p></div>
+        <div class="credits"><p>Designed by ROHIT SINGH</p></div>
+    </div>
+    </footer>
+          
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init();
+</script>
+</body>
+</html>
