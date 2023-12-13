@@ -54,6 +54,7 @@ skillPers.forEach(function(skillPer) {
    
 });
 
+
 function animateNumber(callback, from, to, duration) {
     let start = null,
       animate = timestamp => {
